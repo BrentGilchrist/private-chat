@@ -1,1 +1,0 @@
-{"timestamp": "None", "id": "0", "message": "Text and all message history has been cleared!"}
