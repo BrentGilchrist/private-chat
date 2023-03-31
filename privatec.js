@@ -45,9 +45,10 @@ window.onload = () => {
     data.sort((a, b) => a.id - b.id); // Sort the data by id
     data.forEach(item => {
       const message = item.message;
-      const timestamp = new Date().toLocaleTimeString();
+      const timestamp = item.timestamp;
+       const clientid = item.id;
       const messageElement = document.createElement('div');
-      messageElement.innerText = `[${timestamp}] ${message}`;
+      messageElement.innerText = `${clientid}: [${timestamp}]\n${message}`;
       chatMessages.appendChild(messageElement);
     });
   }
